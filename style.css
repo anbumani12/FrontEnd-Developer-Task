@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid rgb(233, 221, 221);
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .logo {
+    width: 50px;
+    height: 30px;
+    margin-left: 12px;
+    margin-top: 10px;
+  }
+  
+  .join-button {
+    padding: 10px 15px;
+    background-color: rgb(255, 115, 0);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+  
+  .join {
+    padding: 10px 20px;
+    background-color: rgb(255, 115, 0);
+    color: black;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .join-tab {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  
+  .main-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 198, 203);
+    padding: 20px;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 0px;
+  }
+  
+  .overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+  }
+  
+  .image-content {
+    position: absolute;
+    top: 20px;
+    right: 70px;
+    background-color: rgb(234, 38, 129);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 350px;
+    z-index: 3;
+    font-size: small;
+    font-style: inherit;
+    font-family: Arial, sans-serif;
+  }
+  
+  .welcome {
+    color: white !important;
+  }
+  
+  .main-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    opacity: 0.7;
+  }
+  
+  .iphone-image {
+    width: 180px;
+    height: auto;
+    margin-left: 100px;
+    margin-top: 30px;
+    border-radius: 15px;
+  }
+  
+  .biriyani-image {
+    position: absolute;
+    top: 10%;
+    left: 13.5%;
+    width: 20.5%;
+    height: 87%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  
+  .form-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .waitlist-form {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    width: 100%;
+    max-width: 800px;
+    flex-wrap: wrap; /* Add this line */
+  }
+  
+  .waitlist-form input {
+    flex: 1;
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: rgb(255, 80, 0);
+    font-weight: 800;
+    font-size: 25px;
+  }
+  
+  .footer {
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 10px;
+    padding: 5px;
+  }
+  
+  /* Media queries for responsiveness */
+  @media only screen and (max-width: 600px) {
+    .container {
+      max-width: 100%;
+      margin: 10px;
+    }
+    
+    .logo {
+      width: 40px;
+      height: 25px;
+    }
+    
+    .join-button, .join, .join-tab {
+      font-size: 8px;
+      padding: 8px 12px;
+    }
+    
+    .iphone-image {
+      width: 140px;
+      margin-left: 0;
+    }
+    
+    .biriyani-image {
+      width: 70%;
+      top: 20%;
+      left: 15%;
+    }
+    
+    .image-content {
+      right: 20px;
+      left: 20px;
+      max-width: calc(100% - 40px);
+    }
+    
+    .waitlist-form {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .container {
+      max-width: 90%;
+    }
+    
+    .iphone-image {
+      width: 160px;
+    }
+    
+    .biriyani-image {
+      width: 75%;
+      top: 18%;
+      left: 13%;
+    }
+    
+    .image-content {
+      right: 40px;
+      left: 40px;
+      max-width: calc(100% - 80px);
+    }
+    
+    .waitlist-form {
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
+  
